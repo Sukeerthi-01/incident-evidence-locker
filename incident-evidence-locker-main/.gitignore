@@ -1,0 +1,64 @@
+# =============================================================
+#  .gitignore — Tool-36 Incident Evidence Locker
+#  Add this file BEFORE your first commit (Day 1 requirement)
+# =============================================================
+
+# ── SECRETS — Never commit these ─────────────────────────────
+.env
+*.env
+.env.local
+.env.production
+
+# ── Java / Maven build output ─────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.mvn/timing.properties
+
+# ── Python / AI service ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# ── ChromaDB vector store data ────────────────────────────────
+chroma_data/
+
+# ── Node / React / Vite ───────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.local
+
+# ── IDE / Editor files ────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Test coverage reports ─────────────────────────────────────
+target/site/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Docker volumes (local data) ───────────────────────────────
+postgres_data/
+redis_data/
